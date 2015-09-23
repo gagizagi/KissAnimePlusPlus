@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    
+    "name": "KissAnimeSTFU",
+    "short_name": "KissAnimeSTFU",
+    "description": "Remembers KissAnime html5 player volume",
+    "version": "1.0",
+    "author": "GazZy",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://kissanime.com/*"],
+            "js": ["myscript.js"]
+        }
+    ]
+}
