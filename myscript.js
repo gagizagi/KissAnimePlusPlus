@@ -5,7 +5,7 @@ vid.onvolumechange = function(){
         now = new Date();
     
     var time = now.getTime();
-    var expireTime = time + (30*24*60*60*1000);
+    var expireTime = time + (30*24*60*60*1000);//30 day cookie
     now.setTime(expireTime);
     
     document.cookie="kissanimestfu=" + newVolume + "; expires=" + now.toGMTString() + ";path=/";
