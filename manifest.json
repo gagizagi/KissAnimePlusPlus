@@ -1,10 +1,10 @@
 {
     "name": "KissAnime++",
-    "version": "2.0",
+    "version": "2.2",
     "manifest_version": 2,
     
     "short_name": "KA++",
-    "description": "Remembers video settings for KissAnime/KissCartoon/KissAsia websites",
+    "description": "Remembers video settings for KissAnime/KissCartoon/KissAsian websites",
     "author": "GazZy",
     "icons": {
         "16": "icon16.png",
@@ -14,8 +14,12 @@
     
     "content_scripts": [
         {
-            "matches": ["*://kissanime.com/*Episode*", "*://kisscartoon.me/*Episode*", "*://kissasian.com/*Episode*"],
+            "matches": ["*://kissanime.com/*", "*://kisscartoon.me/*", "*://kissasian.com/*"],
             "js": ["script.js"]
         }
+    ],
+    
+    "permissions": [
+        "storage"
     ]
 }
