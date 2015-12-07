@@ -14,7 +14,7 @@
     
     "content_scripts": [
         {
-            "matches": ["*://kissanime.com/*", "*://kisscartoon.me/*", "*://kissasian.com/*"],
+            "matches": ["*://kissanime.to/*", "*://kissanime.com/*", "*://kisscartoon.me/*", "*://kissasian.com/*"],
             "js": ["script.js"]
         }
     ],
