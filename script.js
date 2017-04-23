@@ -1,5 +1,5 @@
-var vid = document.getElementById("my_video_1_html5_api") || false,
-    currentPath = window.location.pathname;
+var vid = document.getElementById("my_video_1_html5_api") || false;
+var currentPath = window.location.pathname;
 
 //Sets video settings to remembered values
 if(vid){
@@ -7,7 +7,7 @@ if(vid){
         if(storage.KissAnimePlusPlusVolume) vid.volume = storage.KissAnimePlusPlusVolume;
         else vid.volume = 0.1;
     });
-    
+
     chrome.storage.sync.get(currentPath, function(storage){
         if(storage[currentPath]) {
             vid.currentTime = storage[currentPath];
